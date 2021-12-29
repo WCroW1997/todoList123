@@ -146,22 +146,22 @@ const showModal = index => {
     modalWindow.classList.add('modal__show')
     closeModalWindow.addEventListener("click", ()  => {
         modalWindow.classList.remove('modal__show')
-    })
-    addAttribute
+    })  
+    // addAttribute()
 }
 
-const chageText = index => {
-    console.log(tasks[index])
-}
+// const chageText = index => {
+//     console.log(tasks[index])
+// }
 
 
-const addAttribute = () => {
-    let chegeBtn = document.querySelector('.modal__btn')
-    chegeBtn.setAttribute(onclick , 'newTaskValue(${index})')
+// const addAttribute = () => {
+//     let chegeBtn = document.querySelector('.modal__btn')
+//     chegeBtn.setAttribute('onclick', 'newTaskValue(this)')
 
-}
+// }
 
 
 const newTaskValue = index => {
-
+    console.log(tasks[index])
 }
