@@ -140,28 +140,41 @@ deleteAllBtn.addEventListener("click", () => {
 // modal
 
 
+
+
 const showModal = index => {
     let modalWindow = document.querySelector('.modal')
     let closeModalWindow = document.querySelector('.modal__close__btn')
-    modalWindow.classList.add('modal__show')
+    let changeBtn = document.querySelector('.modal__btn')
+
+    setTimeout(() => {
+        modalWindow.classList.add('modal__show')
+    }, 600);
+    
+
     closeModalWindow.addEventListener("click", ()  => {
         modalWindow.classList.remove('modal__show')
     })  
-    // addAttribute()
+
+    changeBtn.addEventListener("click" , () =>{
+        let modalText = document.querySelector('.modal__input')
+        tasks[index].text = modalText.value
+        addLocal()
+        fillList()
+        modalWindow.classList.remove('modal__show')
+        modalText.value = ''
+        setTimeout(() => {
+            showPop()
+        }, 600); 
+    })
+    
 }
 
-// const chageText = index => {
-//     console.log(tasks[index])
-// }
 
 
-// const addAttribute = () => {
-//     let chegeBtn = document.querySelector('.modal__btn')
-//     chegeBtn.setAttribute('onclick', 'newTaskValue(this)')
-
-// }
 
 
-const newTaskValue = index => {
-    console.log(tasks[index])
+const showPop = () => {
+    let popUp = document.querySelector('.popup')
+    popUp.classList.add('modal__show')
 }

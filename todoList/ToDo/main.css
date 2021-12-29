@@ -43,6 +43,20 @@
     gap: 10px;
 }
 
+
+
+.popup{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    margin: 0 auto;
+    background: rgb(243, 103, 103);
+    display: none;
+}
+
 .modal__show{
     display: flex;
     justify-content: center;
