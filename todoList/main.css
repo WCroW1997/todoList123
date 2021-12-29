@@ -1,0 +1,14 @@
+.input{
+    padding: 20px;
+    width: 50%;
+    font-size: 14px;
+    color: rgb(12, 12, 12);
+}
+
+.btn{
+    width: 50%;
+    background: red;
+    border: none;
+    padding: 30px;
+    color: #fff;
+}
