@@ -171,10 +171,9 @@ const showModal = index => {
 }
 
 
-
-
-
 const showPop = () => {
     let popUp = document.querySelector('.popup')
     popUp.classList.add('modal__show')
 }
+
+
